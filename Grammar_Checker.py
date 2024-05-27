@@ -16,15 +16,15 @@ root = tk.Tk()
 root.title("Grammar and Spell Checker")
 root.geometry("600x400")
 #input
-text_input_label = tk.Label(root, text="Enter your text here:")
+text_input_label = tk.Label(root, text="Input:")
 text_input_label.pack()
 text_input = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=70, height=10)
 text_input.pack(padx=10, pady=10)
 #button
-correct_button = tk.Button(root, text="Check and Correct", command=correct_text)
+correct_button = tk.Button(root, text="Check!", command=correct_text)
 correct_button.pack(pady=10)
 #output
-text_output_label = tk.Label(root, text="Corrected text:")
+text_output_label = tk.Label(root, text="Outout:")
 text_output_label.pack()
 text_output = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=70, height=10)
 text_output.pack(padx=10, pady=10)
